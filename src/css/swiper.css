@@ -23,21 +23,6 @@
 		justify-content: space-between;
 		pointer-events: none;
 
-		@media ($mdWidth) {
-
-			top: 0;
-			right: 20px;
-
-		}
-
-		@media ($smWidth) {
-
-			right: 0;
-			position: relative;
-			margin-top: 26px;
-
-		}
-
 	}
 
 	.swiper-container {
@@ -209,7 +194,7 @@
 
 		svg {
 
-			fill: var(--violet);
+			fill: var(--orange);
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -274,7 +259,7 @@
 
 		.button {
 
-			background-color: var(--color);
+			background-color: #fff;
 			opacity: .2;
 			height: 6px;
 			width: 6px;

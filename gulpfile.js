@@ -148,10 +148,10 @@ gulp.task('babel', function() {
 		.pipe(sourcemaps.init())
 		.pipe(remember('babel'))
 		.pipe(concat('_js.js'))
-/*		.pipe(babel({
-			presets: ['@babel/env']
+		.pipe(babel({
+			presets: ['es2015']
 		}))
-*/		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write())
 		.pipe(minify({
 			preserveComments: "some",
 			ext : {
