@@ -1,0 +1,63 @@
+.menu {
+
+	@media ($mdWidth) {
+
+		width: 100%;
+		margin-top: auto;
+
+	}
+
+	ul {
+
+		display: flex;
+		align-items: center;
+
+		@media ($mdWidth) {
+
+			display: block;
+			padding: 60px 20px 10px;
+
+		}
+
+	}
+
+	li {
+
+		margin: 0 20px;
+
+		@media ($mdWidth) {
+
+			margin: 10px 0;
+
+		}
+
+	}
+
+	a {
+
+		font-size: 14px;
+		line-height: 20px;
+		color: color(var(--color) a(50%));
+		transition: .3s;
+
+		@media ($mdWidth) {
+
+			font-size: 20px;
+			line-height: 30px;
+			color: var(--color);
+
+		}
+
+		@media ($desktop) {
+
+			&:hover {
+
+				color: color(var(--color) a(100%));
+
+			}
+
+		}
+
+	}
+
+}

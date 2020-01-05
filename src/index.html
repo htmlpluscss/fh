@@ -1,0 +1,86 @@
+{% set title = "ООО «Вест Интелледженс»" %}
+
+{% set description = "" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<div style="padding: 80px 40px">
+
+		<h1 class="h1">Pages</h1>
+
+		<ul class="h1">
+			<li><a href="/home">главная</a></li>
+			<li><a href="/analytics">analytics</a></li>
+			<li><a href="/searching">searching</a></li>
+			<li><a href="/cpc">cpc</a></li>
+			<li><a href="/blog">blog</a></li>
+			<li><a href="/blog/article">article</a></li>
+			<li><a href="/top">top 100</a></li>
+			<li><a href="/calc">calc</a></li>
+			<li><a href="http://sc-lk.wndrbase.com/">lk</a></li>
+		</ul>
+
+		<hr style="margin: 20px">
+
+		<div style="display: flex; flex-wrap: wrap;">
+
+			<button class="btn" style="margin: 10px;">
+				.btn
+			</button>
+
+			<button class="btn btn--big" style="margin: 10px;">
+				.btn--big
+			</button>
+
+			<button class="btn btn--medium" style="margin: 10px;">
+				.btn--medium
+			</button>
+
+			<button class="btn btn--violet" style="margin: 10px;">
+				.btn--violet
+			</button>
+
+			<button class="btn btn--violet-light" style="margin: 10px;">
+				.btn--violet-light
+			</button>
+
+			<button class="btn btn--link" style="margin: 10px;">
+				.btn--link
+			</button>
+
+			<button class="btn btn--arrow" style="margin: 10px;">
+				.btn--arrow
+			</button>
+
+			<input class="input" placeholder="placeholder" style="margin: 10px;">
+
+		</div>
+
+		<h1 class="h1">PageSpeed</h1>
+
+		<ul class="h3">
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fhome%2F&tab=desktop">главная <b>99|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fanalytics%2F&tab=desktop">analytics <b>100|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fsearching%2F&tab=desktop">searching <b>99|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fcpc%2F&tab=desktop">cpc <b>99|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fblog%2F&tab=desktop">blog <b>99|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fblog%2Farticle%2F&tab=desktop">article <b>99|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Ftop%2F&tab=desktop">top 100 <b>100|100</b></a></li>
+			<li><a class="color-dark" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsc.wndrbase.com%2Fcalc%2F&tab=desktop">calc <b>100|100</b></a></li>
+		</ul>
+
+		<hr style="margin: 20px">
+
+		<h1 class="h1">Schema & Open Graph</h1>
+
+		<ul class="h3">
+			<li><a class="color-dark" target="_blank" href="https://search.google.com/structured-data/testing-tool?hl=ru#url=http%3A%2F%2Fsc.wndrbase.com%2Fblog%2Farticle%2F">article</a></li>
+		</ul>
+
+		<hr style="margin: 20px">
+
+	</div>
+
+{% endblock %}

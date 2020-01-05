@@ -1,0 +1,229 @@
+	<div class="modal">
+
+		<div class="modal__box">
+
+			<div class="modal__item modal__item--reg">
+
+				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+
+					<h3 class="modal-form__title h2">
+						Регистрация
+					</h3>
+
+					<div class="modal-form__input">
+
+						<input class="input input--border" placeholder="E-mail" type="email" required="required">
+
+					</div>
+
+					<div class="modal-form__input">
+
+						<input class="input input--border" placeholder="Придумайте пароль" type="password" required="required">
+
+					</div>
+
+					<div class="modal-form__input">
+
+						<input class="input input--border" placeholder="Повторить пароль" type="password" required="required">
+
+					</div>
+
+					<button class="modal-form__btn btn btn--violet">
+						Регистрация
+					</button>
+
+					<button class="modal-form__btn btn btn--violet-light" type="button" data-modal="login">
+						Войти
+					</button>
+
+				</form>
+
+			</div>
+
+			<div class="modal__item modal__item--login">
+
+				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+
+					<h3 class="modal-form__title h2">
+						Вход
+					</h3>
+
+					<div class="modal-form__input">
+
+						<input class="input input--border" placeholder="Логин" required="required">
+
+					</div>
+
+					<div class="modal-form__input">
+
+						<input class="input input--border" placeholder="Пароль" type="password" required="required">
+
+					</div>
+
+					<div class="modal-form__between">
+
+						<label class="checkbox">
+
+							<input type="checkbox" class="checkbox__input" required="required" checked="checked">
+
+							<span class="checkbox__label">
+								Запомнить меня
+							</span>
+
+						</label>
+
+						<button class="btn btn--link hidden-sm" type="button" data-modal="reset">
+							Забыли пароль?
+						</button>
+
+					</div>
+
+					<button class="modal-form__btn btn btn--violet">
+						Войти
+					</button>
+
+					<button class="modal-form__btn btn btn--violet-light" type="button" data-modal="reg">
+						Регистрация
+					</button>
+
+					<div class="visible-sm">
+
+						<div class="modal-form__center">
+
+							<button class="btn btn--link" type="button" data-modal="reset">
+								Забыли пароль?
+							</button>
+
+						</div>
+
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="modal__item modal__item--reset">
+
+				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+
+					<h3 class="modal-form__title h2">
+						Забыли пароль?
+					</h3>
+
+					<p class="modal-form__text">
+						Укажите e-mail на которыйбудет отправлено письмо с восстановлением доступов
+					</p>
+
+					<hr>
+
+					<div class="modal-form__input">
+
+						<input class="input input--border" placeholder="Email" type="email">
+
+					</div>
+
+					<button class="modal-form__btn btn btn--violet">
+						Отправить письмо
+					</button>
+
+				</form>
+
+			</div>
+
+			<div class="modal__item modal__item--wide modal__item--demo">
+
+				<form class="modal-form" action="/" autocomplete="off" novalidate="novalidate">
+
+					<h3 class="modal-form__title h2">
+						Тестовый доступ
+					</h3>
+
+					<p class="modal-form__text mb36">
+						Оставьте заявку и узнайте подробно о возможностях нашего сревиса, используя тестовый доступ с бесплатными отчетами.
+					</p>
+
+					<div class="modal-form__row">
+
+						<div class="modal-form__col">
+
+							<input class="input input--border" placeholder="Рабочий email*" required="required" type="email">
+
+						</div>
+
+						<div class="modal-form__col">
+
+							<input class="input input--border" placeholder="Номер телефона*" required="required" type="tel">
+
+						</div>
+
+					</div>
+
+					<div class="modal-form__row">
+
+						<div class="modal-form__col">
+
+							<input class="input input--border" placeholder="Ваше имя*" required="required">
+
+						</div>
+
+						<div class="modal-form__col">
+
+							<input class="input input--border" placeholder="Ваша должность">
+
+						</div>
+
+					</div>
+
+					<div class="modal-form__row">
+
+						<div class="modal-form__col">
+
+							<input class="input input--border" placeholder="Название компании">
+
+						</div>
+
+						<div class="modal-form__col">
+
+							<input class="input input--border" placeholder="Сайт компаниия">
+
+						</div>
+
+					</div>
+
+					<div class="modal-form__input">
+
+						<textarea class="input input--border" placeholder="Комментарий"></textarea>
+
+					</div>
+
+					<label class="checkbox">
+
+						<input type="checkbox" class="checkbox__input" required="required" checked="checked">
+
+						<span class="checkbox__label">
+							Нажав кнопку «Отправить запрос», вы тем самым подтверждаете, что мы, HiveAnalytic, обработаем вашу личную информацию в соответствии с нашей «политикой конфиденциальности».
+						</span>
+
+					</label>
+
+					<div class="modal-form__btn-center-w360">
+
+						<button class="modal-form__btn btn btn--violet">
+							Войти
+						</button>
+
+					</div>
+
+				</form>
+
+			</div>
+
+			<button type="button" class="modal__close modal__close-btn button" aria-label="Закрыть окно">
+				<svg width="15" height="16" viewBox="0 0 15 16">
+					<path d="M13.24 0.930176L7.93621 6.23268L2.63371 0.930176L0.866211 2.69768L6.16871 8.00018L0.866211 13.3027L2.63371 15.0702L7.93621 9.76767L13.24 15.0702L15.0075 13.3027L9.70496 8.00018L15.0075 2.69768L13.24 0.930176Z"/>
+				</svg>
+			</button>
+
+		</div>
+
+	</div>

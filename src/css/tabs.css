@@ -1,0 +1,64 @@
+.tabs {
+
+	position: relative;
+
+	&__nav {
+
+		display: flex;
+		position: relative;
+		margin: 0 -20px;
+
+		&::before {
+
+			position: absolute;
+			height: 2px;
+			left: 20px;
+			right: 20px;
+			bottom: 0;
+			content: '';
+			background-color: color(var(--color) a(10%));
+
+		}
+
+	}
+
+	&__btn {
+
+		padding: 0;
+		line-height: 52px;
+		font-size: 18px;
+		font-weight: 500;
+		position: relative;
+		border-bottom: 4px solid transparent;
+		cursor: pointer;
+		color: color(var(--color) a(50%));
+		margin: 0 20px;
+		white-space: nowrap;
+
+		@media ($smWidth) {
+
+			font-size: 16px;
+			line-height: 48px;
+			margin-right: 0;
+
+		}
+
+		&--active {
+
+			font-weight: 700;
+			color: var(--violet);
+			pointer-events: none;
+			border-bottom-color: var(--violet);
+
+		}
+
+		&:hover {
+
+			color: color(var(--color) a(100%));
+
+		}
+
+	}
+
+
+}

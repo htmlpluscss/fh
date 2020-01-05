@@ -1,0 +1,326 @@
+/**
+ * Swiper 4.4.5
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * http://www.idangero.us/swiper/
+ *
+ * Copyright 2014-2018 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: December 14, 2018
+ */
+.swiper-container-style {
+
+	position: relative;
+
+	.swiper-controls {
+
+		position: absolute;
+		top: 18px;
+		right: 0;
+		z-index: 5;
+		display: flex;
+		justify-content: space-between;
+		pointer-events: none;
+
+		@media ($mdWidth) {
+
+			top: 0;
+			right: 20px;
+
+		}
+
+		@media ($smWidth) {
+
+			right: 0;
+			position: relative;
+			margin-top: 26px;
+
+		}
+
+	}
+
+	.swiper-container {
+
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+
+		&-wrap {
+
+			@media ($mdWidth) {
+
+				&::before,
+				&::after {
+
+					position: absolute;
+					width: 20px;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					content: '';
+					z-index: 5;
+					pointer-events: none;
+					background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+					display: none;
+
+				}
+
+				&::after {
+
+					left: auto;
+					right: 0;
+					background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+
+				}
+
+			}
+
+			@media ($smWidth) {
+
+				position: relative;
+				margin: 0 -20px;
+
+				.swiper-slide {
+
+					padding: 0 20px;
+
+				}
+
+				&::before,
+				&::after {
+
+					display: block;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.swiper-container-no-flexbox .swiper-slide {
+
+		float: left;
+
+	}
+
+	.swiper-wrapper {
+
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		transition-property: transform;
+
+	}
+
+	.swiper-container-android .swiper-slide,
+	.swiper-wrapper {
+
+		transform: translate3d(0px, 0, 0);
+
+	}
+
+	.swiper-slide {
+
+		flex-shrink: 0;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transition-property: transform;
+
+	}
+
+	.swiper-slide-invisible-blank {
+
+		visibility: hidden;
+
+	}
+
+	/* Auto Height */
+	.swiper-container-autoheight,
+	.swiper-container-autoheight .swiper-slide {
+
+		height: auto;
+
+	}
+
+	.swiper-container-autoheight .swiper-wrapper {
+
+		align-items: flex-start;
+		transition-property: transform, height;
+
+	}
+
+	/* IE10 Windows Phone 8 Fixes */
+	.swiper-container-wp8-horizontal,
+	.swiper-container-wp8-horizontal > .swiper-wrapper {
+
+		touch-action: pan-y;
+
+	}
+
+	.swiper-navigation {
+
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+
+		@media ($smWidth) {
+
+			display: none;
+
+		}
+
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+
+		z-index: 2;
+		position: relative;
+		pointer-events: auto;
+
+		width: 100px;
+		height: 40px;
+		background-color: #fff;
+		box-shadow: 0px 21px 34px rgba(4, 0, 77, 0.14);
+		border-radius: 6px;
+
+		@media ($smWidth) {
+
+			width: 70px;
+			height: 30px;
+
+			svg {
+
+				width: 20px;
+				height: 20px;
+
+			}
+
+		}
+
+		svg {
+
+			fill: var(--violet);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+
+		}
+
+		&.swiper-button-disabled {
+
+			pointer-events: none;
+
+			svg {
+
+				opacity: 0.5;
+
+			}
+
+		}
+
+		@media ($desktop) {
+
+			&:hover {
+
+				transform: translate3d(0, -4px, 0);
+
+			}
+
+		}
+
+	}
+
+	.swiper-button-prev {
+
+
+	}
+
+	.swiper-button-next {
+
+		margin-left: 20px;
+
+	}
+
+	.swiper-pagination {
+
+		transition: 300ms opacity;
+		transform: translate3d(0, 0, 0);
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		display: none;
+		flex-grow: 1;
+
+		@media ($smWidth) {
+
+			display: flex;
+
+		}
+
+		.button {
+
+			background-color: var(--color);
+			opacity: .2;
+			height: 6px;
+			width: 6px;
+			transition: .3s;
+			margin: 5px;
+			border-radius: 3px;
+			pointer-events: auto;
+
+			&.is-active {
+
+				opacity: 1;
+				width: 20px;
+
+			}
+
+		}
+
+	}
+
+	button.swiper-pagination-bullet {
+
+		border: none;
+		box-shadow: none;
+		appearance: none;
+
+	}
+
+	.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+
+		transition-timing-function: ease-out;
+
+	}
+
+	.swiper-container-fade .swiper-slide {
+
+		pointer-events: none;
+		opacity: 0;
+		transition-property: opacity;
+
+		&-active {
+
+			opacity: 1;
+			pointer-events: auto;
+
+		}
+
+	}
+
+}
