@@ -47,8 +47,8 @@ const consolidate      = require('gulp-consolidate');
 
 let config             = null;
 
-const site             = 'ООО «Вест Интелледженс»';
-const domain           = 'sc.wndrbase.com';
+const site             = 'FortHouse.ru';
+const domain           = 'fh.wndrbase.com';
 
 try {
 
