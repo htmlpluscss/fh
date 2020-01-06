@@ -16,7 +16,7 @@
 				swipePrev = document.createElement('button'),
 				items = swipe.querySelectorAll('.swiper-slide'),
 				count = items.length,
-				review = swipe.classList.contains('swiper-container--review');
+				main = swipe.classList.contains('swiper-container--main');
 
 			swipeNav.className = 'swiper-pagination';
 			swipeControls.className = 'swiper-controls';
@@ -25,8 +25,8 @@
 			swipePrev.className = 'swiper-button-prev button';
 			swipeNext.className = 'swiper-button-next button';
 
-			swipePrev.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M7.828 11.0002L13.192 5.63617L11.778 4.22217L4 12.0002L11.778 19.7782L13.192 18.3642L7.828 13.0002H20V11.0002H7.828Z"/></svg>';
-			swipeNext.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M16.172 11.0002l-5.364-5.364 1.414-1.414L20 12.0002l-7.778 7.778-1.414-1.414 5.364-5.364H4v-2h12.172z"/></svg>';
+			swipePrev.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24"></svg>';
+			swipeNext.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24"></svg>';
 
 			swipeBtns.appendChild(swipePrev);
 			swipeBtns.appendChild(swipeNext);
@@ -43,44 +43,27 @@
 
 				}
 
-	/*			swipeNav.classList.add('hide');
-				swipeNext.classList.add('hide');
-				swipePrev.classList.add('hide');
-	*/
+				swipeNav.classList.add('hide');
+				swipeBtns.classList.add('hide');
+
 			}
 
 			resetSwipe();
 
-			if (review) {
+			if (main) {
+
+				swipeBtns.classList.remove('hide');
 
 				toggleSwipe = () => {
 
 					new Swiper(swipe, {
 						loop: true,
 						preloadImages: false,
-						pagination: {
-							clickable: true,
-							bulletElement: 'button',
-							bulletClass: 'button',
-							bulletActiveClass: 'is-active',
-							el: swipeNav
-						},
+						spaceBetween: 5,
+						slidesPerView: 'auto',
 						navigation: {
 							nextEl: swipeNext,
 							prevEl: swipePrev
-						},
-						loopFillGroupWithBlank: true,
-						breakpoints: {
-							768: {
-								slidesPerView: 1,
-								slidesPerGroup: 1,
-								spaceBetween: 0
-							},
-							1200: {
-								slidesPerView: 2,
-								slidesPerGroup: 1,
-								spaceBetween: 140
-							}
 						}
 					});
 

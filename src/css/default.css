@@ -24,7 +24,7 @@ html {
 body {
 
 	color: #fff;
-	min-width: 320px;
+	min-width: 1200px;
 	font-size: 14px;
 	line-height: 1.5;
 	font-family: 'Open Sans', sans-serif;
@@ -38,8 +38,8 @@ body {
 	position: relative;
 	background-color: #000;
 
-	background-image: url(/css/main.jpg);
-	background-position: center 2px;
+	/* background-image: url(/css/main.jpg); */
+	background-position: center 0px;
 
 	/* IE10+ CSS styles go here */
 	@media (-ms-high-contrast: none), (-ms-high-contrast: active) {

@@ -3,6 +3,21 @@
 	flex-shrink: 0;
 	background-color: #222;
 
+	&::after {
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 370px;
+		height: 223px;
+		content: '';
+		background-image: url(/images/footer-patern.png);
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		pointer-events: none;
+
+	}
+
 	&__flex {
 
 		display: flex;
@@ -35,7 +50,7 @@
 
 		width: 210px;
 		height: 56px;
-		outline:1px solid red;
+		outline:2px solid blue;
 
 	}
 

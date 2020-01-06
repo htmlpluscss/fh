@@ -3,29 +3,31 @@
 	background-color: #fff;
 	position: relative;
 	overflow: hidden;
+	background-image: url(/images/main-slider-patern.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+
+	.swiper-container {
+
+		overflow: visible;
+
+	}
+
+	.swiper-controls {
+
+		top: 28px;
+		left: 103px;
+
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+
+	}
 
 	.center {
 
 		padding: 70px 90px;
-
-		&::after,
-		&::before {
-
-			position: absolute;
-			width: 10px;
-			height: 21px;
-			top: 28px;
-			left: 103px;
-			content: '';
-			outline:1px solid red;
-
-		}
-
-		&::after {
-
-			left: 146px;
-
-		}
 
 	}
 
@@ -37,11 +39,17 @@
 
 	&__item {
 
-		width: 863px;
-		height: 544px;
+		width: 863px !important;
+		height: 544px !important;
 		position: relative;
 		margin-right: 5px;
 		flex-shrink: 0;
+
+		.swiper-container-initialized & {
+
+			margin-right: 0;
+
+		}
 
 	}
 

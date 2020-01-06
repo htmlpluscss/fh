@@ -46,31 +46,37 @@
 			line-height: 20px;
 			font-weight: 600;
 
-			&::after {
+			a {
 
-				position: absolute;
-				height: 3px;
-				width: 20px;
-				left: 0;
-				bottom: -8px;
-				content: '';
-				pointer-events: none;
-				background-color: var(--orange);
-				transition: var(--transitionDefault);
-				transform-origin: left;
-				transform: scaleX(0);
+				display: block;
 
-			}
+				&::after {
 
-			@media ($desktop) {
+					position: absolute;
+					height: 3px;
+					width: 20px;
+					left: 0;
+					bottom: -8px;
+					content: '';
+					pointer-events: none;
+					background-color: var(--orange);
+					transition: var(--transitionDefault);
+					transform-origin: left;
+					transform: scaleX(0);
 
-				&:hover {
+				}
 
-					color: #fff;
+				@media ($desktop) {
 
-					&::after {
+					&:hover {
 
-						transform: scaleX(1);
+						color: #fff;
+
+						&::after {
+
+							transform: scaleX(1);
+
+						}
 
 					}
 

@@ -2,7 +2,7 @@
 
 	text-align: center;
 	background-color: #fff;
-	padding: 33px 0 72px;
+	padding: 67px 0 72px;
 	color: #000;
 
 	&__title {
@@ -33,6 +33,20 @@
 		line-height: 17px;
 		font-weight: 700;
 		margin: 0 8px;
+
+		&::after {
+
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			top: 46px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			content: '';
+			outline:2px solid blue;
+
+		}
 
 		small {
 

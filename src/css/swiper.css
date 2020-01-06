@@ -16,12 +16,10 @@
 	.swiper-controls {
 
 		position: absolute;
-		top: 18px;
-		right: 0;
+		top: 0;
+		left: 0;
 		z-index: 5;
 		display: flex;
-		justify-content: space-between;
-		pointer-events: none;
 
 	}
 
@@ -172,25 +170,9 @@
 		position: relative;
 		pointer-events: auto;
 
-		width: 100px;
-		height: 40px;
-		background-color: #fff;
-		box-shadow: 0px 21px 34px rgba(4, 0, 77, 0.14);
-		border-radius: 6px;
-
-		@media ($smWidth) {
-
-			width: 70px;
-			height: 30px;
-
-			svg {
-
-				width: 20px;
-				height: 20px;
-
-			}
-
-		}
+		width: 10px;
+		height: 21px;
+		outline:1px solid red;
 
 		svg {
 
@@ -220,7 +202,6 @@
 
 			&:hover {
 
-				transform: translate3d(0, -4px, 0);
 
 			}
 
@@ -235,7 +216,7 @@
 
 	.swiper-button-next {
 
-		margin-left: 20px;
+		margin-left: 33px;
 
 	}
 

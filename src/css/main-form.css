@@ -3,11 +3,33 @@
 	background-color: #fff;
 	padding-top: 50px;
 	position: relative;
+	background-image: url(/images/main-form-patern.png);
+	background-repeat: no-repeat;
 
 	&__form {
 
 		position: relative;
 		padding: 50px 0;
+		background-color: #5b5b5b;
+
+	}
+
+	&__img {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: .1;
+		pointer-events: none;
+
+	}
+
+	.center {
+
+		z-index: 1;
 
 	}
 

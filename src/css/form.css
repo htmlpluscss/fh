@@ -79,6 +79,7 @@
 
 			&:hover {
 
+				color: var(--orange);
 				background-color: transparent;
 
 			}
