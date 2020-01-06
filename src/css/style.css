@@ -12,3 +12,10 @@
 @import url(menu.css);
 @import url(social.css);
 @import url(footer.css);
+
+@import url(main-top.css);
+@import url(main-slider.css);
+@import url(main-catalog.css);
+@import url(main-about.css);
+@import url(main-brands.css);
+@import url(main-form.css);

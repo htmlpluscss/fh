@@ -5,7 +5,7 @@
 	border-radius: 0;
 	font-family: inherit;
 	background-color: transparent;
-	transition: .3s;
+	transition: var(--transitionDefault);
 	cursor: pointer;
 	user-select: none;
 	position: relative;
@@ -51,7 +51,7 @@
 
 	height: 45px;
 	font-size: 13px;
-	line-height: 41px;
+	line-height: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
@@ -59,12 +59,12 @@
 	border-radius: 3px;
 	border: 2px solid var(--orange);
 	background-color: transparent;
-	letter-spacing: .5px;
 
 	@media ($desktop) {
 
 		&:hover {
 
+			color: #fff;
 			background-color: var(--orange);
 
 		}
@@ -87,6 +87,13 @@
 
 	}
 
+	&--read-more {
+
+		width: 192px;
+		letter-spacing: .6px;
+
+	}
+
 	&--small {
 
 		height: 32px;
@@ -94,7 +101,6 @@
 		line-height: 28px;
 		text-transform: none;
 		font-weight: 400;
-		letter-spacing: 0;
 		padding: 0 26px;
 
 	}
@@ -136,10 +142,10 @@
 
 .input {
 
-	height: 60px;
+	height: 50px;
 	line-height: 20px;
 
-	padding: 0 20px;
+	padding: 15px 0;
 
 	font-size: 16px;
 	color: #fff;
@@ -154,8 +160,9 @@
 
 	background-color: transparent;
 	border: 0;
-	box-shadow: 0 0 0 1px #fff;
+	border-bottom: 1px solid #fff;
 	border-radius: 0;
+	transition: var(--transitionDefault);
 
 	textarea& {
 
@@ -190,7 +197,7 @@
 
 		&:hover {
 
-			box-shadow: 0 0 0 1px var(--orange);
+			border-bottom-color: var(--orange);
 
 		}
 
@@ -199,7 +206,7 @@
 	&:focus {
 
 		outline: none;
-		box-shadow: 0 0 0 1px var(--orange);
+		border-bottom-color: var(--orange);
 
 		&::placeholder {
 
@@ -276,6 +283,7 @@
 			top: 0;
 			left: 0;
 			content: '';
+			transition: var(--transitionDefault);
 
 		}
 

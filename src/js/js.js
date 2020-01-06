@@ -8,26 +8,27 @@ https://github.com/htmlpluscss/
 
 */
 
-var SC = {};
+(()=>{
 
-(function(){
+	"use strict";
 
-	SC.resizeTimeout = null,
-	SC.windowWidthOLd = window.innerWidth,
+	window.FH = window.FH || {};
+	FH.resizeTimeout = null;
+	FH.windowWidthOLd = window.innerWidth;
 
-	window.addEventListener("resize", function(){
+	window.addEventListener("resize",()=>{
 
-		window.requestAnimationFrame(function(){
+		window.requestAnimationFrame(()=>{
 
-			if (!SC.resizeTimeout) {
+			if (!FH.resizeTimeout) {
 
-				SC.resizeTimeout = setTimeout(function() {
+				FH.resizeTimeout = setTimeout(()=>{
 
-					SC.resizeTimeout = null;
+					FH.resizeTimeout = null;
 
-					if(SC.windowWidthOLd !== window.innerWidth) {
+					if(FH.windowWidthOLd !== window.innerWidth) {
 
-						SC.windowWidthOLd = window.innerWidth;
+						FH.windowWidthOLd = window.innerWidth;
 
 						PubSub.publish('windowWidthResize');
 
@@ -41,9 +42,9 @@ var SC = {};
 
 	});
 
-	window.addEventListener("scroll", function(){
+	window.addEventListener("scroll",()=>{
 
-		window.requestAnimationFrame(function(){
+		window.requestAnimationFrame(()=>{
 
 			PubSub.publish('windowScroll');
 
@@ -51,25 +52,25 @@ var SC = {};
 
 	});
 
-	window.addEventListener("DOMContentLoaded", function(){
+	window.addEventListener("DOMContentLoaded",()=>{
 
 		PubSub.publish('DOMContentLoaded');
 
 	});
 
-	window.addEventListener("load", function(){
+	window.addEventListener("load",()=>{
 
 		PubSub.publish('pageLoad');
 
 	});
 
 	// обработчик анимаций
-	SC.cssAnimation = function(a){var b,c,d=document.createElement("cssanimation");switch(a){case'animation':b={"animation":"animationend","OAnimation":"oAnimationEnd","MozAnimation":"animationend","WebkitAnimation":"webkitAnimationEnd"};break;case'transition':b={"transition":"transitionend","OTransition":"oTransitionEnd","MozTransition":"transitionend","WebkitTransition":"webkitTransitionEnd"}}for(c in b)if(d.style[c]!==undefined)return b[c]}
+	FH.cssAnimation = (a)=>{var b,c,d=document.createElement("cssanimation");switch(a){case'animation':b={"animation":"animationend","OAnimation":"oAnimationEnd","MozAnimation":"animationend","WebkitAnimation":"webkitAnimationEnd"};break;case'transition':b={"transition":"transitionend","OTransition":"oTransitionEnd","MozTransition":"transitionend","WebkitTransition":"webkitTransitionEnd"}}for(c in b)if(d.style[c]!==undefined)return b[c]};
 
 	// Determine if an element is in the visible viewport
-	SC.isInViewport = function(element) {
+	FH.isInViewport = (element) => {
 		var rect = element.getBoundingClientRect();
 		return (rect.top >= 0 && rect.bottom <= window.innerHeight);
-	}
+	};
 
 })();

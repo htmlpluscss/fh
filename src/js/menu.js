@@ -1,23 +1,26 @@
+(()=>{
 
-	document.addEventListener('click', function (e) {
+	"use strict";
+
+	document.addEventListener('click', (e) => {
 
 		if(e.target.closest('.btn-menu-toggle') || e.target.classList.contains('menu-show')){
 
-			if(SC.OpenMenu) {
+			if(FH.OpenMenu) {
 
 				document.body.classList.remove('menu-show');
 
-				window.scrollTo(0,SC.windowScrollOld);
+				window.scrollTo(0,FH.windowScrollOld);
 
-				SC.OpenMenu = false;
+				FH.OpenMenu = false;
 
 			}
 			else {
 
-				SC.OpenMenu = true;
+				FH.OpenMenu = true;
 
 				// записываем значение скролла страницы
-				SC.windowScrollOld = window.pageYOffset;
+				FH.windowScrollOld = window.pageYOffset;
 				window.scrollTo(0,0);
 
 				document.body.classList.add('menu-show');
@@ -27,3 +30,5 @@
 		}
 
 	});
+
+})();

@@ -1,0 +1,48 @@
+.social {
+
+	display: flex;
+	margin: 2px -6px -6px;
+
+	&__item {
+
+		margin: 6px;
+
+	}
+
+	&__link {
+
+		color: transparent;
+		font-size: 0;
+		border-radius: 50%;
+		width: 37px;
+		height: 37px;
+		background-color: #000;
+		display: flex;
+		align-items: center;
+
+		@media ($desktop) {
+
+			&:hover {
+
+				background-color: #fff;
+
+				svg {
+
+					fill: #000;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	svg {
+
+		margin: auto;
+		fill: #fff;
+
+	}
+
+}

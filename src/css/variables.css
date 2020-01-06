@@ -5,6 +5,8 @@
 	--red: #f00;
 	--error: #f00;
 
+	--transitionDefault: .3s;
+
 }
 
 $desktop: (min-width: 1200px);

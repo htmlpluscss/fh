@@ -1,0 +1,51 @@
+.main-brands {
+
+	padding: 55px 0 58px;
+
+	p {
+
+		text-align: center;
+		margin: 27px auto 18px;
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: .6px;
+
+		& + p {
+
+			margin-top: 0;
+
+		}
+
+	}
+
+	&__list {
+
+		display: flex;
+		justify-content: space-around;
+		margin: 70px 0 64px;
+
+	}
+
+	&__item {
+
+		margin: 0 12px;
+		height: 50px;
+		outline:1px solid red;
+		width: 158px;
+
+		img {
+
+			display: none;
+
+		}
+
+	}
+
+	&__btn {
+
+		display: flex;
+		justify-content: center;
+
+	}
+
+}

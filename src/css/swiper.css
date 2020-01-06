@@ -263,7 +263,7 @@
 			opacity: .2;
 			height: 6px;
 			width: 6px;
-			transition: .3s;
+			transition: var(--transitionDefault);
 			margin: 5px;
 			border-radius: 3px;
 			pointer-events: auto;

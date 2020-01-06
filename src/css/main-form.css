@@ -1,0 +1,61 @@
+.main-form {
+
+	background-color: #fff;
+	padding-top: 50px;
+	position: relative;
+
+	&__form {
+
+		position: relative;
+		padding: 50px 0;
+
+	}
+
+	&__title {
+
+		margin-bottom: 30px;
+		letter-spacing: 1.2px;
+		margin-left: -42px;
+
+	}
+
+	&__text {
+
+		text-align: center;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 18px;
+		letter-spacing: .15px;
+
+	}
+
+	&__fieldset {
+
+		display: flex;
+		align-items: flex-end;
+		margin: 61px 0 71px 157px;
+
+	}
+
+	&__name {
+
+		width: 175px;
+		flex-shrink: 0;
+
+	}
+
+	&__tel {
+
+		width: 405px;
+		flex-shrink: 0;
+		margin: 0 38px 0 48px;
+
+	}
+
+	&__btn {
+
+		flex-shrink: 0;
+
+	}
+
+}

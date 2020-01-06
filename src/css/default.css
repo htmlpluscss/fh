@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  color: red !important;
+  /* color: red !important; */
 }
 
 html {
@@ -39,7 +39,7 @@ body {
 	background-color: #000;
 
 	background-image: url(/css/main.jpg);
-	background-position: top;
+	background-position: center 2px;
 
 	/* IE10+ CSS styles go here */
 	@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -54,7 +54,7 @@ a {
 
 	color: #fff;
 	text-decoration: none;
-	transition: .3s;
+	transition: var(--transitionDefault);
 
 	@media ($desktop) {
 
@@ -65,6 +65,45 @@ a {
 		}
 
 	}
+
+	&[href^=tel] {
+
+		cursor: text;
+
+		@media ($desktop) {
+
+			&:hover {
+
+				color: inherit;
+
+			}
+
+		}
+
+	}
+
+}
+
+.link {
+
+	color: #fff;
+	text-decoration: underline;
+
+	@media ($desktop) {
+
+		&:hover {
+
+			text-decoration-color: transparent;
+
+		}
+
+	}
+
+}
+
+.color-orange {
+
+	color: var(--orange);
 
 }
 
@@ -94,7 +133,7 @@ svg {
 
 	display: block;
 	position: relative;
-	transition: .3s;
+	transition: var(--transitionDefault);
 
 }
 
@@ -103,7 +142,7 @@ hr {
 
 	border: 0;
 	height: 1px;
-	background-color: #000;
+	background-color: #fff;
 
 }
 
@@ -152,24 +191,20 @@ table {
 
 	text-align: center;
 	text-transform: uppercase;
-	margin: 100px;
+	margin-left: -46px;
+	letter-spacing: 1.8px;
 
-	span {
+	&::before {
 
 		position: relative;
-		display: block;
-
-		&::before {
-
-			position: absolute;
-			width: 20px;
-			height: 2px;
-			top: 0;
-			left: -100px;
-			content: '';
-			background-color: var(--orange);
-
-		}
+		width: 36px;
+		height: 4px;
+		top: -3px;
+		left: -10px;
+		vertical-align: middle;
+		display: inline-block;
+		content: '';
+		background-color: var(--orange);
 
 	}
 

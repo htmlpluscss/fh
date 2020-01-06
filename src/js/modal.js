@@ -1,5 +1,6 @@
-
 (function(modal){
+
+	"use strict";
 
 	if(!modal) {
 
@@ -13,7 +14,7 @@
 		wrapper = document.querySelector('.wrapper'),
 		windowScroll = 0;
 
-	modal.addEventListener('click', function (e) {
+	modal.addEventListener('click', (e) => {
 
 		if(e.target.classList.contains('modal') || e.target.closest('.modal__close')){
 
@@ -23,7 +24,7 @@
 
 	});
 
-	SC.hideModal = function() {
+	SC.hideModal = () => {
 
 		modal.classList.add('visuallyhidden');
 
@@ -33,7 +34,7 @@
 
 		SC.activeModal = false;
 
-		setTimeout(function(){
+		setTimeout(()=>{
 
 			document.documentElement.classList.remove('scroll-behavior-off');
 
@@ -41,7 +42,7 @@
 
 	};
 
-	SC.modalShow = function (selector, text) {
+	SC.modalShow = (selector, text)=>{
 
 		document.documentElement.classList.add('scroll-behavior-off');
 
@@ -57,7 +58,7 @@
 
 		box.classList.toggle('modal__box--wide', SC.activeModal.classList.contains('modal__item--wide'));
 
-		Array.prototype.forEach.call(items, function(el){
+		Array.prototype.forEach.call(items,(el)=>{
 
 			el.classList.toggle('visuallyhidden', el !== SC.activeModal);
 
@@ -73,9 +74,9 @@
 
 	};
 
-	Array.prototype.forEach.call(btns, function(el){
+	Array.prototype.forEach.call(btns,(el)=>{
 
-		el.addEventListener('click', function(e) {
+		el.addEventListener('click',(e)=>{
 
 			e.preventDefault();
 

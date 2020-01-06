@@ -1,0 +1,55 @@
+.main-about {
+
+	text-align: center;
+	background-color: #fff;
+	padding: 33px 0 72px;
+	color: #000;
+
+	&__title {
+
+		margin: 31px 0;
+
+	}
+
+	&__btn {
+
+		display: flex;
+		justify-content: center;
+		margin-top: 35px;
+
+	}
+
+	&__list {
+
+		display: flex;
+		justify-content: center;
+
+	}
+
+	&__item {
+
+		width: 158px;
+		font-size: 12px;
+		line-height: 17px;
+		font-weight: 700;
+		margin: 0 8px;
+
+		small {
+
+			display: block;
+			font-size: 12px;
+			line-height: 17px;
+			font-weight: 400;
+			color: var(--gray);
+
+		}
+
+		svg {
+
+			margin: 14px auto;
+
+		}
+
+	}
+
+}
