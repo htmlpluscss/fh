@@ -24,6 +24,7 @@ html {
 body {
 
 	color: #fff;
+	min-width: 320px;
 	min-width: 1200px;
 	font-size: 14px;
 	line-height: 1.5;
