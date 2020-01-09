@@ -1,0 +1,21 @@
+{% set title = "Кухни" %}
+
+{% set description = "At Winning Appliances we want to make doing the laundry easier and more efficient, so you can get on with the better things in life. Sourced from the world's best brands, our range of laundry products caters to a range of budgets but each appliance offers quality, performance and convenience." %}
+
+{% set breadcrumbs = [
+	{
+		name : "Кухни",
+		link: "catalog"
+	}
+] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "catalog/top.html" %}
+{% include "catalog/brands.html" %}
+{% include "catalog/category.html" %}
+{% include "catalog/shop.html" %}
+
+{% endblock %}

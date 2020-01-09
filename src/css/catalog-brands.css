@@ -1,0 +1,39 @@
+.catalog-brands {
+
+	background-color: #fff;
+
+	.center {
+
+		width: 900px;
+		padding: 38px 0;
+
+	}
+
+	&__list {
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+	}
+
+	&__item {
+
+		white-space: nowrap;
+		margin: 3px;
+
+	}
+
+	&__link {
+
+		color: #898989;
+		border: 2px solid;
+		display: block;
+		padding: 0 32px;
+		line-height: 28px;
+		font-weight: 700;
+		border-radius: 3px;
+
+	}
+
+}

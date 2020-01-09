@@ -311,11 +311,11 @@ gulp.task('copy', function() {
 
 gulp.task('ftp', function () {
 
-//	if(!config) {
+	if(!config) {
 
 		return true;
 
-//	}
+	}
 
 	const f = filter('**/*.html', {restore: true});
 //	const cssInline = fs.readFileSync('build/css/styles.min.css', "utf8");
