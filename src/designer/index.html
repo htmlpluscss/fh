@@ -1,0 +1,24 @@
+{% set title = "Антон Лавреньтьев из Москвы, дизайнер интерьеров." %}
+
+{% set description = "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum." %}
+
+{% set urlPage = "designer" %}
+{% set ogImage = "img/designer/anton@2x.jpg" %}
+
+{% set breadcrumbs = [
+	{
+		name : "Дизайнеры",
+		link: "designer"
+	}
+] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "designer/top.html" %}
+{% include "designer/about.html" %}
+{% set mod = "btnShow" %}
+{% include "_include/gallery.html" %}
+
+{% endblock %}

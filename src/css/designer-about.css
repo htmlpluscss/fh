@@ -1,0 +1,52 @@
+.designer-about {
+
+	color: #000;
+	background-color: #fff;
+
+	&__box {
+
+		display: flex;
+		padding: 80px 0 94px;
+
+	}
+
+	&__img {
+
+		margin-top: -190px;
+		margin-left: 65px;
+		margin-right: 60px;
+		flex-shrink: 0;
+
+		img {
+
+			border-radius: 4px;
+
+		}
+
+	}
+
+	&__text {
+
+		font-size: 14px;
+		line-height: 20px;
+		max-width: 330px;
+
+		img {
+
+			margin: 14px 0;
+
+		}
+
+	}
+
+	&__name {
+
+		margin: 22px 0 26px;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 400;
+		letter-spacing: .1px;
+
+	}
+
+}

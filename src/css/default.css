@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  /* color: red !important; */
+
 }
 
 html {
@@ -38,9 +38,6 @@ body {
 	overflow-y: scroll;
 	position: relative;
 	background-color: #000;
-
-	/* background-image: url(/css/designer.jpg); */
-	background-position: center 0px;
 
 	/* IE10+ CSS styles go here */
 	@media (-ms-high-contrast: none), (-ms-high-contrast: active) {

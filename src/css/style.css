@@ -16,13 +16,13 @@
 
 @import url(slider.css);
 @import url(gallery.css);
+@import url(top-block.css);
 
 @import url(main-top.css);
 @import url(main-about.css);
 @import url(main-brands.css);
 @import url(main-form.css);
 
-@import url(catalog-top.css);
 @import url(catalog-shop.css);
 @import url(catalog-category.css);
 @import url(catalog-brands.css);
@@ -30,3 +30,5 @@
 @import url(product-article.css);
 @import url(product-tabletop.css);
 @import url(product-form.css);
+
+@import url(designer-about.css);
