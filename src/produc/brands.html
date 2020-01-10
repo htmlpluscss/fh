@@ -1,0 +1,39 @@
+	<aside class="catalog-brands">
+
+		<div class="center">
+
+{% set list = [
+	'Ascoli',
+	'Asko',
+	'Bora',
+	'Bosch',
+	'Cold vine',
+	'Die Dietrick',
+	'Dunavox',
+	'Ascoli',
+	'Asko',
+	'Bora',
+	'Bosch',
+	'Cold vine',
+	'Die Dietrick'
+] %}
+
+			<ul class="catalog-brands__list">
+
+{% for link in list %}
+
+				<li class="catalog-brands__item">
+
+					<a href="/" class="catalog-brands__link">
+						{{ link }}
+					</a>
+
+				</li>
+
+{% endfor %}
+
+			</ul>
+
+		</div>
+
+	</aside>

@@ -1,0 +1,25 @@
+{% set title = "Torino Lack" %}
+
+{% set description = "" %}
+
+{% set breadcrumbs = [
+	{
+		name : "Кухни",
+		link: "catalog"
+	},
+	{
+		name : "Torino Lack",
+		link: "product"
+	}
+] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "product/top.html" %}
+{% include "product/brands.html" %}
+{% include "product/category.html" %}
+{% include "product/shop.html" %}
+
+{% endblock %}

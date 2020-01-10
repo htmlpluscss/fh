@@ -59,10 +59,9 @@
 		svg {
 
 			position: absolute;
-			top: 5px;
+			top: 4px;
 			left: -23px;
 			fill: #fff;
-			outline:1px solid red;
 
 		}
 
@@ -80,10 +79,9 @@
 		svg {
 
 			position: absolute;
-			top: 3px;
+			top: 2px;
 			left: -25px;
 			fill: #fff;
-			outline:1px solid red;
 
 		}
 

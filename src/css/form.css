@@ -114,10 +114,9 @@
 		svg {
 
 			position: absolute;
-			top: 7px;
-			left: 14px;
+			top: 6px;
+			left: 12px;
 			fill: #fff;
-			outline:1px solid red;
 
 		}
 
@@ -131,9 +130,8 @@
 
 			position: absolute;
 			top: 5px;
-			left: 24px;
+			left: 15px;
 			fill: #fff;
-			outline:1px solid red;
 
 		}
 

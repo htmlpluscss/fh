@@ -172,11 +172,10 @@
 
 		width: 10px;
 		height: 21px;
-		outline:1px solid red;
 
 		svg {
 
-			fill: var(--orange);
+			fill: #000;
 			position: absolute;
 			top: 0;
 			left: 0;
