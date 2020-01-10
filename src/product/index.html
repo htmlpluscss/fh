@@ -2,6 +2,9 @@
 
 {% set description = "Классические" %}
 
+{% set urlPage = "catalog/product" %}
+{% set ogImage = "img/product-article/1@2x.jpg" %}
+
 {% set breadcrumbs = [
 	{
 		name : "Кухни",
@@ -17,6 +20,7 @@
 
 {% block content %}
 
+{% include "product/schema.html" %}
 {% include "product/top.html" %}
 {% set mod = "product" %}
 {% include "_include/slider.html" %}

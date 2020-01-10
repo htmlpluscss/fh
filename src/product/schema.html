@@ -1,0 +1,50 @@
+	<script type="application/ld+json">
+
+		{
+			"@context": "https://schema.org",
+			"@type": "Product",
+			"name": "{{ title }}",
+			"description": "{{ description | truncate(255) }}",
+			"image": "{{ url }}/{{ ogImage }}",
+			"url": "{{ url }}/{{ urlPage }}",
+			"brand": "EagleTac",
+			"sku": "301228",
+			"gtin13": "глобальный идентификатор товара, например код ISBN, MPN или GTIN8",
+			"offers": {
+				"@type": "Offer",
+				"price": "6990",
+				"priceValidUntil": "2019-03-03",
+				"availability": "https://schema.org/InStock",
+				"priceCurrency": "RUB",
+				"url": "{{ url }}/{{ urlPage }}"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "5",
+				"reviewCount": "4"
+			},
+			"review": [
+				{
+					"@type": "Review",
+					"author": "Покупатель2",
+					"datePublished": "2019-12-31",
+					"description": "Реально мощная ИК подсветка. Субъективно дальность видимости выросла процентов на 30-40. Правда желательно знать в каком ИК диапазоне работает теплак, если не угадать, то такого эффекта не будет.",
+					"reviewRating": {
+						"@type": "Rating",
+						"ratingValue": "5"
+					}
+				},
+				{
+					"@type": "Review",
+					"author": "Покупатель",
+					"datePublished": "2019-09-02",
+					"description": "Реально мощная ИК подсветка. Субъективно дальность видимости выросла процентов на 30-40. Правда желательно знать в каком ИК диапазоне работает теплак, если не угадать, то такого эффекта не будет.",
+					"reviewRating": {
+						"@type": "Rating",
+						"ratingValue": "5"
+					}
+				}
+			]
+		}
+
+	</script>
