@@ -1,0 +1,39 @@
+.product-article {
+
+	background-color: #f1f1f1;
+	padding: 50px 0 30px;
+	color: #000;
+
+	.title {
+
+		margin-left: 10px;
+		letter-spacing: 1.2px;
+
+	}
+
+	&__box {
+
+		display: flex;
+		justify-content: space-between;
+		padding: 34px 30px;
+
+	}
+
+	&__col {
+
+		width: 512px;
+		flex-shrink: 0;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: .28px;
+
+	}
+
+	img {
+
+		margin-bottom: 18px;
+		max-width: 100%;
+
+	}
+
+}

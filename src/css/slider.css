@@ -1,11 +1,45 @@
-.main-slider {
+.slider {
 
 	background-color: #fff;
 	position: relative;
 	overflow: hidden;
-	background-image: url(/images/main-slider-patern.png);
-	background-position: right top;
-	background-repeat: no-repeat;
+
+	&--main {
+
+		background-image: url(/images/main-slider-patern.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+		padding: 70px 0;
+
+	}
+
+	&--product {
+
+		padding: 100px 0 40px;
+
+	}
+
+	&--related {
+
+		padding: 10px 0 40px;
+
+		.title {
+
+			margin-left: 12px;
+			letter-spacing: 1.2px;
+			margin-bottom: 66px;
+			color: #000;
+
+		}
+
+		.slider__item {
+
+			width: 487px !important;
+			height: 307px !important;
+
+		}
+
+	}
 
 	.swiper-container {
 
@@ -15,7 +49,7 @@
 
 	.swiper-controls {
 
-		top: 28px;
+		top: -42px;
 		left: 103px;
 
 	}
@@ -27,7 +61,7 @@
 
 	.center {
 
-		padding: 70px 90px;
+		padding: 0 90px;
 
 	}
 

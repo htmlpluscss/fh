@@ -14,8 +14,9 @@
 @import url(footer.css);
 @import url(breadcrumbs.css);
 
+@import url(slider.css);
+
 @import url(main-top.css);
-@import url(main-slider.css);
 @import url(main-catalog.css);
 @import url(main-about.css);
 @import url(main-brands.css);
@@ -25,3 +26,7 @@
 @import url(catalog-shop.css);
 @import url(catalog-category.css);
 @import url(catalog-brands.css);
+
+@import url(product-article.css);
+@import url(product-tabletop.css);
+@import url(product-form.css);

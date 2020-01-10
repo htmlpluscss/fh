@@ -80,6 +80,7 @@
 			font-size: 24px;
 			font-weight: 700;
 			color: #fff;
+			text-shadow: 1px 1px 0 rgba(0,0,0,.57);
 
 			&::after {
 

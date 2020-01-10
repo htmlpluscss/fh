@@ -16,7 +16,9 @@
 				swipePrev = document.createElement('button'),
 				items = swipe.querySelectorAll('.swiper-slide'),
 				count = items.length,
-				main = swipe.classList.contains('swiper-container--main');
+				main = swipe.classList.contains('swiper-container--main'),
+				product = swipe.classList.contains('swiper-container--product'),
+				related = swipe.classList.contains('swiper-container--related');
 
 			swipeNav.className = 'swiper-pagination';
 			swipeControls.className = 'swiper-controls';
@@ -50,7 +52,7 @@
 
 			resetSwipe();
 
-			if (main) {
+//			if (main) {
 
 				swipeBtns.classList.remove('hide');
 
@@ -71,7 +73,7 @@
 
 				}
 
-			}
+//			}
 
 			PubSub.subscribe('windowWidthResize', function(){
 

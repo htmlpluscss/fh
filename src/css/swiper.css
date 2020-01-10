@@ -34,6 +34,8 @@
 
 		&-wrap {
 
+			position: relative;
+
 			@media ($mdWidth) {
 
 				&::before,

@@ -246,14 +246,44 @@
 
 }
 
+.radio-btn {
+
+	cursor: pointer;
+
+	&__input:checked + &__label {
+
+		color: #000;
+		border-color: var(--orange);
+
+	}
+
+	&__label {
+
+		display: block;
+		font-size: 13px;
+		line-height: 36px;
+		padding: 0 20px;
+		color: #868686;
+		text-transform: uppercase;
+		letter-spacing: .5px;
+		font-weight: 700;
+		border: 2px solid;
+		border-radius: 3px;
+
+	}
+
+}
+
 .checkbox {
 
 	display: block;
 	position: relative;
 	cursor: pointer;
 
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 14px;
+	line-height: 18px;
+	min-height: 24px;
+	letter-spacing: .7px;
 
 	&__input {
 
@@ -270,37 +300,39 @@
 	&__label {
 
 		display: block;
-		padding-left: 35px;
+		padding: 2px 0 2px 42px;
 
 		&::before {
 
-			width: 20px;
-			height: 20px;
-			border-radius: 2px;
+			width: 24px;
+			height: 24px;
+			border-radius: 1px;
 			position: absolute;
-			box-shadow: inset 0 0 0 2px color(#000 a(30%));
 			top: 0;
 			left: 0;
 			content: '';
 			transition: var(--transitionDefault);
+			background-color: #c8c8c8;
+			background-position: center;
+			background-repeat: no-repeat;
 
 		}
 
 	}
 
-	&:hover &__label::before {
+	@media ($desktop) {
 
-		box-shadow: inset 0 0 0 2px color(#000 a(50%));
+		&:hover &__label::before {
+
+			background-color: #a8a8a8;
+
+		}
 
 	}
 
 	&__input[type="checkbox"]:checked + &__label::before {
 
-		box-shadow: none;
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='9' fill='none' viewBox='0 0 10 9'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M9.619.3735a1.2567 1.2567 0 00-1.8046 0l-4.5122 4.6-1.1278-1.15a1.262 1.262 0 00-1.8047 0c-.4985.5094-.4985 1.3344 0 1.8406L2.4 7.736a1.2566 1.2566 0 001.8047 0L9.619 2.2141c.4984-.5094.4984-1.3344 0-1.8406z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
-		background-color: var(--orange);
-		background-position: center;
-		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='9' fill='none' viewBox='0 0 10 9'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M9.619.3735a1.2567 1.2567 0 00-1.8046 0l-4.5122 4.6-1.1278-1.15a1.262 1.262 0 00-1.8047 0c-.4985.5094-.4985 1.3344 0 1.8406L2.4 7.736a1.2566 1.2566 0 001.8047 0L9.619 2.2141c.4984-.5094.4984-1.3344 0-1.8406z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
 
 	}
 
