@@ -90,13 +90,12 @@
 	&__logo {
 
 		position: absolute;
-		width: 210px;
-		height: 56px;
+		width: 202px;
+		height: 52px;
 		top: 0;
 		left: 0;
 		right: 0;
 		margin: auto;
-		outline:1px solid red;
 
 	}
 
