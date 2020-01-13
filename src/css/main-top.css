@@ -6,8 +6,15 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 730px;
+	min-height: 730px;
 	padding: 200px 0 106px;
+
+	@media ($mdWidth) {
+
+		min-height: 500px;
+		padding: 100px 0;
+
+	}
 
 	&::after {
 

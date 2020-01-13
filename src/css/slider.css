@@ -11,11 +11,33 @@
 		background-repeat: no-repeat;
 		padding: 70px 0;
 
+		@media ($mdWidth) {
+
+			&::before {
+
+				position: absolute;
+				height: 70px;
+				top: 0;
+				left: 0;
+				right: 0;
+				content: '';
+				background-color: rgba(255,255,255,.7);
+
+			}
+
+		}
+
 	}
 
 	&--product {
 
 		padding: 100px 0 40px;
+
+		@media ($mdWidth) {
+
+			padding: 70px 0 40px;
+
+		}
 
 	}
 
@@ -52,6 +74,13 @@
 		top: -42px;
 		left: 103px;
 
+		@media ($mdWidth) {
+
+			top: -42px;
+			left: 20px;
+
+		}
+
 	}
 
 	.swiper-button-prev,
@@ -61,7 +90,11 @@
 
 	.center {
 
-		padding: 0 90px;
+		@media ($desktop) {
+
+			padding: 0 90px;
+
+		}
 
 	}
 
@@ -78,6 +111,13 @@
 		position: relative;
 		margin-right: 5px;
 		flex-shrink: 0;
+
+		@media ($mdWidth) {
+
+			width: 728px !important;
+			height: calc(728/863*544px) !important;
+
+		}
 
 		.swiper-container-initialized & {
 

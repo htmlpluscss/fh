@@ -57,6 +57,13 @@
 
 			fill: #fff;
 
+			@media ($mdWidth) {
+
+				width: auto;
+				height: auto;
+
+			}
+
 		}
 
 	}

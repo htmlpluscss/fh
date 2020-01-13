@@ -30,6 +30,12 @@
 		display: block;
 		background-color: #000;
 
+		@media ($mdWidth) {
+
+			height: 200px;
+
+		}
+
 		&::after {
 
 			position: absolute;
@@ -39,6 +45,13 @@
 			bottom: 0;
 			content: '';
 			background-image: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0));
+
+
+			@media ($mdWidth) {
+
+				height: 100%;
+
+			}
 
 		}
 
@@ -51,6 +64,12 @@
 		&--big {
 
 			height: 499px;
+
+			@media ($mdWidth) {
+
+				height: 403px;
+
+			}
 
 		}
 
@@ -74,6 +93,13 @@
 		bottom: 28px;
 		z-index: 1;
 
+		@media ($mdWidth) {
+
+			left: 20px;
+			bottom: 20px;
+
+		}
+
 		b {
 
 			display: block;
@@ -81,6 +107,12 @@
 			font-weight: 700;
 			color: #fff;
 			text-shadow: 1px 1px 0 rgba(0,0,0,.57);
+
+			@media ($mdWidth) {
+
+				line-height: 28px;
+
+			}
 
 			&::after {
 
@@ -91,6 +123,12 @@
 				background-color: var(--orange);
 				transition: var(--transitionDefault);
 				margin: 2px 0 3px;
+
+				@media ($mdWidth) {
+
+					margin: 10px 0;
+
+				}
 
 			}
 

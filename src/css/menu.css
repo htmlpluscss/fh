@@ -32,6 +32,12 @@
 
 		margin-top: 41px;
 
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
 		&__list {
 
 			display: flex;
@@ -94,6 +100,12 @@
 		column-gap: 53px;
 
 		@media ($mdWidth) {
+
+			column-gap: 20px;
+
+		}
+
+		@media ($smWidth) {
 
 			columns: auto;
 

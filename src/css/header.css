@@ -20,6 +20,16 @@
 
 	}
 
+	.center {
+
+		@media ($mdWidth) {
+
+			width: 100%;
+
+		}
+
+	}
+
 	&__flex {
 
 		display: flex;
@@ -31,6 +41,22 @@
 
 		display: flex;
 
+		@media ($mdWidth) {
+
+			width: 100%;
+
+		}
+
+	}
+
+	&__right {
+
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
 	}
 
 	&__call {
@@ -40,9 +66,22 @@
 		flex-shrink: 0;
 		margin-right: 60px;
 
+		@media ($mdWidth) {
+
+			padding: 0;
+			margin: 0;
+
+		}
+
 		.btn {
 
 			margin-top: 4px;
+
+			@media ($mdWidth) {
+
+				display: none;
+
+			}
 
 		}
 
@@ -63,6 +102,12 @@
 			left: -23px;
 			fill: #fff;
 
+			@media ($mdWidth) {
+
+				display: none;
+
+			}
+
 		}
 
 	}
@@ -75,6 +120,12 @@
 		width: 200px;
 		margin-top: 3px;
 		position: relative;
+
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
 
 		svg {
 
@@ -96,6 +147,21 @@
 		left: 0;
 		right: 0;
 		margin: auto;
+
+		@media ($mdWidth) {
+
+			width: 151.5px;
+			height: 39px;
+			top: -5px;
+
+			img {
+
+				width: 151.5px;
+				height: 39px;
+
+			}
+
+		}
 
 	}
 
@@ -119,7 +185,7 @@
 		position: absolute;
 		flex-shrink: 0;
 		top: 0;
-		left: 15px;
+		right: 17px;
 
 		&__top,
 		&__center,
@@ -131,7 +197,7 @@
 			right: 0;
 			bottom: 0;
 			margin: auto;
-			width: 20px;
+			width: 24px;
 			height: 2px;
 			transition: var(--transitionDefault);
 			background-color: #fff;
@@ -141,13 +207,19 @@
 
 		&__bottom {
 
-			bottom: 12px;
+			bottom: 14px;
 
 		}
 
 		&__top {
 
-			top: 12px;
+			top: 14px;
+
+		}
+
+		&__center {
+
+			transform: scaleX(1);
 
 		}
 
@@ -155,20 +227,21 @@
 
 			&__center {
 
-				background-color: transparent;
+				transform: scaleX(0);
+				opacity: 0;
 
 			}
 
 			&__bottom {
 
-				transform: rotate(225deg) scaleX(1.1);
+				transform: rotate(45deg) scaleX(1.1);
 				bottom: 0;
 
 			}
 
 			&__top {
 
-				transform: rotate(-225deg) scaleX(1.1);
+				transform: rotate(-45deg) scaleX(1.1);
 				top: 0;
 
 			}
@@ -179,8 +252,6 @@
 
 	.menu-show {
 
-		background-color: #fff;
-
 		.main,
 		.footer {
 
@@ -190,7 +261,6 @@
 
 		.wrapper {
 
-			background-color: #fff;
 			padding: 0;
 
 		}

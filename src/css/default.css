@@ -25,7 +25,6 @@ body {
 
 	color: #fff;
 	min-width: 320px;
-	min-width: 1200px;
 	font-size: 14px;
 	line-height: 1.5;
 	font-family: 'Open Sans', sans-serif;
@@ -159,6 +158,13 @@ table {
 	line-height: 50px;
 	font-weight: 700;
 
+	@media ($mdWidth) {
+
+		font-size: 36px;
+		line-height: 42px;
+
+	}
+
 }
 
 .h2 {
@@ -167,6 +173,13 @@ table {
 	line-height: 42px;
 	font-weight: 700;
 
+	@media ($mdWidth) {
+
+		font-size: 32px;
+		line-height: 36px;
+
+	}
+
 }
 
 .h3 {
@@ -174,6 +187,13 @@ table {
 	font-size: 32px;
 	line-height: 30px;
 	font-weight: 700;
+
+	@media ($mdWidth) {
+
+		font-size: 24px;
+		line-height: 30px;
+
+	}
 
 }
 

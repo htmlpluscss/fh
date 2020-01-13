@@ -1,8 +1,15 @@
 .top-block {
 
 	position: relative;
-	height: 500px;
+	min-height: 500px;
 	padding: 248px 0 40px;
+
+	@media ($mdWidth) {
+
+		min-height: 0;
+		padding: 100px 0 30px;
+
+	}
 
 	&::after {
 
@@ -16,6 +23,12 @@
 		right: 0;
 		bottom: 0;
 		content: '';
+
+		@media ($mdWidth) {
+
+			opacity: .3;
+
+		}
 
 	}
 
@@ -41,8 +54,19 @@
 	&__content {
 
 		position: relative;
-		margin: 24px 40px 0 62px;
 		z-index: 1;
+
+		@media ($desktop) {
+
+			margin: 24px 40px 0 62px;
+
+		}
+
+		@media ($mdWidth) {
+
+			margin-top: 24px;
+
+		}
 
 	}
 
@@ -68,6 +92,12 @@
 		padding-top: 17px;
 		padding-left: 4px;
 
+		@media ($mdWidth) {
+
+			padding: 4px 30px 0 0;
+
+		}
+
 	}
 
 	&__action {
@@ -78,6 +108,12 @@
 		border-left: 4px solid var(--orange);
 		padding: 12px 14px;
 		flex-shrink: 0;
+
+		@media ($mdWidth) {
+
+			width: 300px;
+
+		}
 
 		h3 {
 

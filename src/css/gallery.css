@@ -6,6 +6,12 @@
 
 		padding: 0 0 60px;
 
+		@media ($mdWidth) {
+
+			padding-bottom: 30px;
+
+		}
+
 	}
 
 	&__title {
@@ -43,15 +49,33 @@
 		height: 388px;
 		overflow: hidden;
 
+		@media ($mdWidth) {
+
+			height: 300px;
+
+		}
+
 		&--1 {
 
 			width: 761px;
+
+			@media ($mdWidth) {
+
+				width: 423px;
+
+			}
 
 		}
 
 		&--2 {
 
 			width: 439px;
+
+			@media ($mdWidth) {
+
+				width: 345px;
+
+			}
 
 			&::after {
 
@@ -65,23 +89,29 @@
 
 			}
 
-			.gallery__name {
-
-				left: 22px;
-
-			}
-
 		}
 
 		&--3 {
 
 			width: 512px;
 
+			@media ($mdWidth) {
+
+				width: 345px;
+
+			}
+
 		}
 
 		&--4 {
 
 			width: 688px;
+
+			@media ($mdWidth) {
+
+				width: 423px;
+
+			}
 
 			&::after {
 
@@ -160,6 +190,12 @@
 		z-index: 1;
 		color: #fff;
 		letter-spacing: .8px;
+
+		@media ($mdWidth) {
+
+			left: 40px;
+
+		}
 
 	}
 

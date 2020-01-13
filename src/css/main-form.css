@@ -57,12 +57,25 @@
 		align-items: flex-end;
 		margin: 61px 0 71px 157px;
 
+		@media ($mdWidth) {
+
+			margin: 40px 0;
+
+		}
+
 	}
 
 	&__name {
 
 		width: 175px;
 		flex-shrink: 0;
+
+		@media ($mdWidth) {
+
+			width: auto;
+			flex-grow: 1;
+
+		}
 
 	}
 
@@ -71,6 +84,13 @@
 		width: 405px;
 		flex-shrink: 0;
 		margin: 0 38px 0 48px;
+
+		@media ($mdWidth) {
+
+			width: 256px;
+			margin: 0 30px;
+
+		}
 
 	}
 

@@ -1,14 +1,18 @@
 .breadcrumbs {
 
-	margin-left: 64px;
 	display: flex;
 	flex-wrap: wrap;
 	z-index: 1;
 	position: relative;
 
+	@media ($desktop) {
+
+		margin-left: 64px;
+
+	}
+
 	@media ($smWidth) {
 
-		display: none;
 
 	}
 

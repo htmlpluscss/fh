@@ -4,6 +4,12 @@
 	padding: 50px 0 30px;
 	color: #000;
 
+	@media ($mdWidth) {
+
+		padding: 30px 0;
+
+	}
+
 	.title {
 
 		margin-left: 10px;
@@ -17,6 +23,12 @@
 		justify-content: space-between;
 		padding: 34px 30px;
 
+		@media ($mdWidth) {
+
+			padding: 20px 0 0;
+
+		}
+
 	}
 
 	&__col {
@@ -27,12 +39,24 @@
 		line-height: 22px;
 		letter-spacing: .28px;
 
+		@media ($mdWidth) {
+
+			width: calc(50% - 10px);
+
+		}
+
 	}
 
 	img {
 
 		margin-bottom: 18px;
 		max-width: 100%;
+
+		@media ($mdWidth) {
+
+			height: auto;
+
+		}
 
 	}
 
