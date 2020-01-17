@@ -22,6 +22,12 @@
 		letter-spacing: 1.2px;
 		margin: 0 42px 40px;
 
+		@media ($smWidth) {
+
+			margin: 0 20px 30px;
+
+		}
+
 		&::after {
 
 			position: absolute;
@@ -42,6 +48,12 @@
 		display: flex;
 		flex-wrap: wrap;
 
+		@media ($smWidth) {
+
+			display: block;
+
+		}
+
 	}
 
 	&__item {
@@ -52,6 +64,25 @@
 		@media ($mdWidth) {
 
 			height: 300px;
+
+		}
+
+		@media ($smWidth) {
+
+			height: 200px;
+			width: 100%;
+
+			&::after {
+
+				position: absolute;
+				top: 0;
+				left: -50px;
+				right: -50px;
+				bottom: -50px;
+				content: '';
+				box-shadow: inset 0 0 20px #000;
+
+			}
 
 		}
 
@@ -197,6 +228,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			left: 20px;
+
+		}
+
 	}
 
 	&__btn {
@@ -204,6 +241,12 @@
 		margin-top: 30px;
 		display: flex;
 		justify-content: center;
+
+		@media ($smWidth) {
+
+			margin-top: 20px;
+
+		}
 
 	}
 

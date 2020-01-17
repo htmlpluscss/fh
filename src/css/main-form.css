@@ -6,11 +6,23 @@
 	background-image: url(/images/main-form-patern.png);
 	background-repeat: no-repeat;
 
+	@media ($smWidth) {
+
+		padding-top: 30px;
+
+	}
+
 	&__form {
 
 		position: relative;
 		padding: 50px 0;
 		background-color: #5b5b5b;
+
+		@media ($smWidth) {
+
+			padding: 30px 0 10px;
+
+		}
 
 	}
 
@@ -39,6 +51,28 @@
 		letter-spacing: 1.2px;
 		margin-left: -42px;
 
+		@media ($smWidth) {
+
+			margin-bottom: 20px;
+			margin-left: 0;
+			font-size: 16px;
+
+			&::before {
+
+				display: none;
+
+			}
+
+		}
+
+		@media ($xsWidth) {
+
+			font-size: 15px;
+			margin-left: -10px;
+			margin-right: -10px;
+
+		}
+
 	}
 
 	&__text {
@@ -60,6 +94,13 @@
 		@media ($mdWidth) {
 
 			margin: 40px 0;
+
+		}
+
+		@media ($smWidth) {
+
+			margin: 20px;
+			display: block;
 
 		}
 
@@ -92,11 +133,25 @@
 
 		}
 
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 20px 0 30px;
+
+		}
+
 	}
 
 	&__btn {
 
 		flex-shrink: 0;
+
+		@media ($smWidth) {
+
+			display: flex;
+			justify-content: center;
+
+		}
 
 	}
 

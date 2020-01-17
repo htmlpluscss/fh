@@ -52,11 +52,22 @@
 
 			resetSwipe();
 
-//			if (main) {
+			toggleSwipe = () => {
 
-				swipeBtns.classList.remove('hide');
+				if (window.innerWidth >= 768) {
 
-				toggleSwipe = () => {
+					swipeNav.classList.add('hide');
+					swipeBtns.classList.remove('hide');
+
+				}
+				else {
+
+					swipeNav.classList.remove('hide');
+					swipeBtns.classList.add('hide');
+
+				}
+
+				if(!mySwipe) {
 
 					new Swiper(swipe, {
 						loop: true,
@@ -66,14 +77,19 @@
 						navigation: {
 							nextEl: swipeNext,
 							prevEl: swipePrev
+						},
+						pagination: {
+							clickable: true,
+							bulletElement: 'button',
+							bulletClass: 'button',
+							bulletActiveClass: 'is-active',
+							el: swipeNav
 						}
 					});
 
-					toggleSwipe = null;
-
 				}
 
-//			}
+			}
 
 			PubSub.subscribe('windowWidthResize', function(){
 

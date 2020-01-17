@@ -21,6 +21,12 @@
 		z-index: 5;
 		display: flex;
 
+		@media ($smWidth) {
+
+			position: static;
+
+		}
+
 	}
 
 	.swiper-container {
@@ -35,54 +41,6 @@
 		&-wrap {
 
 			position: relative;
-
-			@media ($mdWidth) {
-
-				&::before,
-				&::after {
-
-					position: absolute;
-					width: 20px;
-					top: 0;
-					left: 0;
-					bottom: 0;
-					content: '';
-					z-index: 5;
-					pointer-events: none;
-					background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-					display: none;
-
-				}
-
-				&::after {
-
-					left: auto;
-					right: 0;
-					background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-
-				}
-
-			}
-
-			@media ($smWidth) {
-
-				position: relative;
-				margin: 0 -20px;
-
-				.swiper-slide {
-
-					padding: 0 20px;
-
-				}
-
-				&::before,
-				&::after {
-
-					display: block;
-
-				}
-
-			}
 
 		}
 
@@ -232,6 +190,7 @@
 		position: relative;
 		display: none;
 		flex-grow: 1;
+		margin-top: 10px;
 
 		@media ($smWidth) {
 
@@ -241,19 +200,17 @@
 
 		.button {
 
-			background-color: #fff;
-			opacity: .2;
+			background-color: #000;
 			height: 6px;
 			width: 6px;
 			transition: var(--transitionDefault);
 			margin: 5px;
-			border-radius: 3px;
 			pointer-events: auto;
 
 			&.is-active {
 
 				opacity: 1;
-				width: 20px;
+				background-color: var(--orange);
 
 			}
 

@@ -3,6 +3,12 @@
 	display: flex;
 	margin: 2px -6px -6px;
 
+	@media ($smWidth) {
+
+		justify-content: center;
+
+	}
+
 	&__item {
 
 		margin: 6px;

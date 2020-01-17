@@ -16,6 +16,13 @@
 
 	}
 
+	@media ($smWidth) {
+
+		min-height: 0;
+		padding: 70px 0 30px;
+
+	}
+
 	&::after {
 
 		background-image: url(/images/top-patern.png);
@@ -28,6 +35,12 @@
 		right: 0;
 		bottom: 0;
 		content: '';
+
+		@media ($smWidth) {
+
+			opacity: .2;
+
+		}
 
 	}
 
@@ -58,6 +71,12 @@
 		margin: 80px auto;
 		text-shadow: 1px 1px 0 rgba(0,0,0,.86);
 
+		@media ($smWidth) {
+
+			margin: 20px 0;
+
+		}
+
 	}
 
 	&__btns {
@@ -65,10 +84,29 @@
 		display: flex;
 		justify-content: center;
 
+		@media ($smWidth) {
+
+			flex-wrap: wrap;
+			margin: 0 -10px;
+
+		}
+
 		&-item {
 
 			width: 192px;
 			margin: 9px;
+
+			@media ($smWidth) {
+
+				width: calc(50% - 18px);
+
+				.btn {
+
+					padding: 0;
+
+				}
+
+			}
 
 		}
 

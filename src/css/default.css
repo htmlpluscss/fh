@@ -165,6 +165,13 @@ table {
 
 	}
 
+	@media ($smWidth) {
+
+		font-size: 30px;
+		line-height: 36px;
+
+	}
+
 }
 
 .h2 {
@@ -177,6 +184,13 @@ table {
 
 		font-size: 32px;
 		line-height: 36px;
+
+	}
+
+	@media ($smWidth) {
+
+		font-size: 24px;
+		line-height: 28px;
 
 	}
 
@@ -195,6 +209,13 @@ table {
 
 	}
 
+	@media ($smWidth) {
+
+		font-size: 20px;
+		line-height: 26px;
+
+	}
+
 }
 
 .h4 {
@@ -202,6 +223,13 @@ table {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
+
+	@media ($smWidth) {
+
+		font-size: 20px;
+		line-height: 24px;
+
+	}
 
 }
 

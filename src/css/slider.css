@@ -27,6 +27,18 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding: 30px 0 20px;
+
+			&::before {
+
+				display: none;
+
+			}
+
+		}
+
 	}
 
 	&--product {
@@ -39,11 +51,23 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding: 30px 0 20px;
+
+		}
+
 	}
 
 	&--related {
 
 		padding: 10px 0 40px;
+
+		@media ($smWidth) {
+
+			padding: 30px 0 20px;
+
+		}
 
 		.title {
 
@@ -51,6 +75,19 @@
 			letter-spacing: 1.2px;
 			margin-bottom: 66px;
 			color: #000;
+
+			@media ($smWidth) {
+
+				margin: 0 0 20px;
+				letter-spacing: 0;
+
+				&::before {
+
+					display: none;
+
+				}
+
+			}
 
 		}
 
@@ -96,6 +133,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding: 0;
+
+		}
+
 	}
 
 	&__list {
@@ -116,6 +159,13 @@
 
 			width: 728px !important;
 			height: calc(728/863*544px) !important;
+
+		}
+
+		@media ($smWidth) {
+
+			width: 100% !important;
+			height: calc(100wv/863*544px) !important;
 
 		}
 
@@ -148,6 +198,22 @@
 		background-color: rgba(0,0,0,.77);
 		padding: 30px 44px 38px 33px;
 		z-index: 1;
+
+		@media ($smWidth) {
+
+			padding: 20px;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0));
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+
+		}
 
 		p {
 

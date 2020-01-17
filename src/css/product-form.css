@@ -12,6 +12,12 @@
 
 		}
 
+		@media ($smWidth) {
+
+			padding: 0;
+
+		}
+
 	}
 
 	&__title {
@@ -22,6 +28,19 @@
 		&::before {
 
 			top: -2px;
+
+		}
+
+		@media ($smWidth) {
+
+			margin: 0 0 20px;
+			letter-spacing: 0;
+
+			&::before {
+
+				display: none;
+
+			}
 
 		}
 
@@ -38,6 +57,13 @@
 
 		}
 
+		@media ($smWidth) {
+
+			display: block;
+			padding: 0;
+
+		}
+
 	}
 
 	&__form {
@@ -51,8 +77,15 @@
 
 		@media ($mdWidth) {
 
+			padding: 30px;
+			margin: 0 -20px;
+
+		}
+
+		@media ($smWidth) {
+
 			padding: 30px 20px;
-			margin-left: -20px;
+			margin: 0;
 
 		}
 
@@ -61,6 +94,14 @@
 			text-transform: uppercase;
 			font-size: 22px;
 			letter-spacing: 1.1px;
+
+			@media ($smWidth) {
+
+				text-transform: none;
+				font-size: 18px;
+				letter-spacing: 0;
+
+			}
 
 		}
 
@@ -88,12 +129,27 @@
 		letter-spacing: 0.73px;
 		max-width: 600px;
 
+		@media ($smWidth) {
+
+			text-transform: none;
+			letter-spacing: 0;
+			margin: 10px 0;
+
+		}
+
 	}
 
 	&__row {
 
 		display: flex;
 		margin-bottom: 30px;
+
+		@media ($smWidth) {
+
+			display: block;
+			margin-bottom: 20px;
+
+		}
 
 	}
 
@@ -102,6 +158,13 @@
 		width: 176px;
 		margin-right: 32px;
 
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 0;
+
+		}
+
 	}
 
 	&__email {
@@ -109,11 +172,25 @@
 		width: 210px;
 		margin-right: 32px;
 
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 20px 0;
+
+		}
+
 	}
 
 	&__tel {
 
 		width: 210px;
+
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 0;
+
+		}
 
 	}
 
@@ -121,6 +198,13 @@
 
 		width: 383px;
 		margin-right: 33px;
+
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 0;
+
+		}
 
 	}
 
@@ -132,6 +216,13 @@
 		.checkbox + .checkbox {
 
 			margin-top: 13px;
+
+		}
+
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 30px 0 0;
 
 		}
 
@@ -178,6 +269,13 @@
 
 		}
 
+		@media ($smWidth) {
+
+			margin: 0;
+			display: block;
+
+		}
+
 	}
 
 	&__help {
@@ -188,6 +286,21 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
+		@media ($smWidth) {
+
+			width: 100%;
+			padding-top: 40px;
+			z-index: 1;
+			display: flex;
+
+		}
 
 		&::before {
 
@@ -212,6 +325,7 @@
 			text-transform: uppercase;
 			margin-bottom: 20px;
 			position: relative;
+			z-index: 2;
 
 		}
 

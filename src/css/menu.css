@@ -6,6 +6,12 @@
 		justify-content: flex-end;
 		margin: 4px 0;
 
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
+
 		&__list {
 
 			display: flex;
@@ -102,12 +108,6 @@
 		@media ($mdWidth) {
 
 			column-gap: 20px;
-
-		}
-
-		@media ($smWidth) {
-
-			columns: auto;
 
 		}
 

@@ -4,6 +4,37 @@
 	background-image: url(/images/main-brands-patern.png);
 	background-position: left bottom;
 	background-repeat: no-repeat;
+	position: relative;
+
+	@media ($smWidth) {
+
+		padding: 30px 0;
+
+		&::after {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			background-image: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
+
+		}
+
+		.title {
+
+			margin-left: 0;
+
+			&::before {
+
+				display: none;
+
+			}
+
+		}
+
+	}
 
 	&__img {
 
@@ -15,6 +46,12 @@
 		object-fit: cover;
 		opacity: .2;
 		pointer-events: none;
+
+		@media ($smWidth) {
+
+			opacity: .5;
+
+		}
 
 	}
 
@@ -47,11 +84,25 @@
 		justify-content: space-around;
 		margin: 70px 0 64px;
 
+		@media ($smWidth) {
+
+			margin: 10px -10px;
+			flex-wrap: wrap;
+
+		}
+
+
 	}
 
 	&__item {
 
 		margin: 0 12px;
+
+		@media ($smWidth) {
+
+			margin: 10px;
+
+		}
 
 		img {
 

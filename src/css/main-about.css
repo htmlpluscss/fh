@@ -11,9 +11,21 @@
 
 	}
 
+	@media ($smWidth) {
+
+		padding-bottom: 30px;
+
+	}
+
 	&__title {
 
 		margin: 31px 0;
+
+		@media ($smWidth) {
+
+			margin: 0;
+
+		}
 
 	}
 
@@ -23,12 +35,24 @@
 		justify-content: center;
 		margin-top: 35px;
 
+		@media ($smWidth) {
+
+			margin-top: 20px;
+
+		}
+
 	}
 
 	&__list {
 
 		display: flex;
 		justify-content: center;
+
+		@media ($smWidth) {
+
+			display: block;
+
+		}
 
 	}
 
@@ -39,6 +63,17 @@
 		line-height: 17px;
 		font-weight: 700;
 		margin: 0 8px;
+
+		@media ($smWidth) {
+
+			width: 100%;
+			margin: 0;
+			margin-top: 10px;
+			display: flex;
+			align-items: center;
+			text-align: left;
+
+		}
 
 		small {
 
@@ -58,6 +93,15 @@
 
 				width: 100px;
 				height: 100px;
+
+			}
+
+			@media ($smWidth) {
+
+				width: 63px;
+				height: 63px;
+				flex-shrink: 0;
+				margin: 0 20px 0 0;
 
 			}
 

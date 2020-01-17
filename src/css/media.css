@@ -65,6 +65,12 @@
 
 	}
 
+	.center {
+
+		width: 480px;
+
+	}
+
 }
 
 @media ($xsWidth) {

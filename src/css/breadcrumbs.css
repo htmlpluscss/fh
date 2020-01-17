@@ -13,12 +13,14 @@
 
 	@media ($smWidth) {
 
+		display: none;
 
 	}
 
 	&__item {
 
 		display: flex;
+		align-items: center;
 		white-space: nowrap;
 		color: var(--orange);
 
@@ -31,8 +33,11 @@
 		&::after {
 
 			color: #fff;
-			content: "/";
+			content: "";
 			margin: 0 10px;
+			width: 12px;
+			height: 7px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cg fill='%23fff'%3E%3Cpath d='M2 3h1v1H2zM4 3h1v1H4zM6 3h1v1H6zM8 3h1v1H8zM10 3h1v1h-1zM9 2h1v1H9zM9 4h1v1H9zM8 5h1v1H8zM8 1h1v1H8z'/%3E%3C/g%3E%3C/svg%3E%0A");
 
 		}
 
