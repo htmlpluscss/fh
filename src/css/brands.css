@@ -1,0 +1,306 @@
+.brands {
+
+	&-cards {
+
+		background-color: #fff;
+		padding-top: 5px;
+
+		&__list {
+
+			position: relative;
+			flex-wrap: wrap;
+			padding-left: 50px;
+			display: flex;
+			margin-top: -130px;
+
+			@media ($mdWidth) {
+
+				margin: 0 -15px;
+				padding: 10px 0 0;
+
+			}
+
+			@media ($smWidth) {
+
+				margin: 0;
+				padding: 0;
+				display: block;
+
+			}
+
+		}
+
+		&__item {
+
+			width: 307px;
+			border: 1px solid #d7d7d7;
+			position: relative;
+			margin: 15px;
+			display: flex;
+			flex-direction: column;
+			background-color: #fff;
+
+			@media ($desktop) {
+
+				&:hover {
+
+					box-shadow: 0 0 35px rgba(0,0,0,.24);
+					border-color: #fff;
+
+				}
+
+			}
+
+			@media ($mdWidth) {
+
+				width: calc(50% - 30px);
+
+			}
+
+			@media ($smWidth) {
+
+				width: 100%;
+				margin: 20px 0 0;
+
+			}
+
+		}
+
+		&__img {
+
+			height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 20px 20px 8px;
+			flex-shrink: 0;
+
+			img {
+
+				max-width: 100%;
+				max-height: 100%;
+
+			}
+
+		}
+
+		&__name {
+
+			margin: 0 20px;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			flex-shrink: 0;
+			position: static;
+
+		}
+
+		&__link {
+
+			position: static;
+			color: var(--orange);
+
+			&::after {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				z-index: 1;
+
+			}
+
+		}
+
+		&__cat {
+
+			margin: 17px 35px;
+			font-size: 12px;
+			line-height: 16px;
+			font-weight: 600;
+			flex-shrink: 0;
+			color: #000;
+
+			li {
+
+				margin: 7px 0;
+
+				&::before {
+
+					position: absolute;
+					width: 4px;
+					height: 4px;
+					top: 7px;
+					left: -9px;
+					content: '';
+					background-color: #000;
+
+				}
+
+			}
+
+		}
+
+		&__made {
+
+			flex-shrink: 0;
+			margin: auto -1px 0;
+			border-top: 1px solid #d7d7d7;
+			border-bottom: 1px solid #d7d7d7;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 13px;
+			font-weight: 700;
+			height: 38px;
+			color: #000;
+			padding-bottom: 4px;
+
+			&::before {
+
+				width: 10px;
+				height: 13px;
+				content: '';
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='13' viewBox='0 0 14 20'%3E%3Cpath d='M7.07,4.38A2.56,2.56,0,1,0,9.62,6.94,2.56,2.56,0,0,0,7.07,4.38Zm0,4.38A1.83,1.83,0,1,1,8.89,6.94,1.83,1.83,0,0,1,7.07,8.76Z'%3E%3C/path%3E%3Cpath d='M12,2.05a7,7,0,0,0-9.9,0,8,8,0,0,0-.66,9.84L7,20l5.6-8.09A8,8,0,0,0,12,2.05ZM12,11.47,7,18.71,2,11.46a7.2,7.2,0,0,1,.58-8.9,6.27,6.27,0,0,1,8.87,0A7.21,7.21,0,0,1,12,11.47Z'%3E%3C/path%3E%3C/svg%3E");
+				margin-right: 8px;
+
+			}
+
+		}
+
+		&__foot {
+
+			margin: 0 -1px -1px;
+			padding: 20px;
+			background-color: #000;
+
+		}
+
+		&__ship {
+
+			flex-shrink: 0;
+			font-size: 13px;
+			line-height: 18px;
+			position: relative;
+			margin: 0 0 15px 76px;
+
+			&::before {
+
+				position: absolute;
+				width: 26px;
+				height: 28px;
+				top: 0;
+				left: -36px;
+				content: '';
+				outline:1px solid red;
+
+			}
+
+			small {
+
+				display: block;
+				font-size: 11px;
+
+			}
+
+		}
+
+		.btn {
+
+			width: 145px;
+			margin: 5px auto;
+			letter-spacing: .6px;
+			pointer-events: none;
+
+		}
+
+	}
+
+	&-litteral {
+
+		background-color: #fff;
+
+		&__column {
+
+			padding: 30px 57px 46px 65px;
+			column-count: 4;
+
+			@media ($mdWidth) {
+
+				padding: 30px 0;
+				column-count: 2;
+
+			}
+
+			@media ($smWidth) {
+
+				column-count: auto;
+
+			}
+
+		}
+
+		&__block {
+
+			display: inline-block;
+			width: 100%;
+			-webkit-column-break-inside: avoid;
+			break-inside: avoid;
+			page-break-inside: avoid;
+			position: relative;
+			padding: 14px 0 12px 52px;
+			min-height: 106px;
+			color: #000;
+
+			&::before {
+
+				position: absolute;
+				width: 57px;
+				height: 57px;
+				top: 13px;
+				left: 0;
+				border-radius: 50%;
+				content: '';
+				border: 2px solid #000;
+
+			}
+
+			&::after {
+
+				position: absolute;
+				width: 61px;
+				height: 61px;
+				top: 13px;
+				left: 0;
+				content: attr(data-litter);
+				text-align: center;
+				font-size: 36px;
+				line-height: 60px;
+
+			}
+
+		}
+
+		&__item {
+
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 14px;
+			background-color: #fff;
+			padding: 8px 10px;
+
+			a {
+
+				color: #000;
+
+			}
+
+		}
+
+	}
+
+}

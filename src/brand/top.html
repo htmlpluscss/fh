@@ -1,0 +1,35 @@
+	<div class="top-block">
+
+{% if breadcrumbs %}
+
+	{% include "template/breadcrumbs.html" %}
+
+{% endif %}
+
+		<article class="top-block__box">
+
+			<div class="center">
+
+				<div class="top-block__content">
+
+					<h1 class="top-block__title h1">
+						{{ title }}
+					</h1>
+
+				</div>
+
+			</div>
+
+			<picture>
+
+				<source srcset="/img/top-block/back.webp" type="image/webp">
+
+				<source srcset="/img/top-block/back.jpg">
+
+				<img class="top-block__img" src="/img/top-block/back.jpg" alt="" loading="lazy" width="1200" height="648">
+
+			</picture>
+
+		</article>
+
+	</div>

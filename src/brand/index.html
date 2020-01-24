@@ -1,0 +1,23 @@
+{% set title = "Бренды" %}
+
+{% set description = "" %}
+
+{% set urlPage = "brand" %}
+{% set ogImage = "img/brand/anton@2x.jpg" %}
+
+{% set breadcrumbs = [
+	{
+		name : "Бренды",
+		link: "brand"
+	}
+] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "brand/top.html" %}
+{% include "brand/list.html" %}
+{% include "brand/litteral.html" %}
+
+{% endblock %}

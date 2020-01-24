@@ -1,0 +1,64 @@
+	<div class="brands-cards">
+
+		<div class="center">
+
+			<div class="brands-cards__list">
+
+{% for item in [1,2,3,4,5,6,7,8,9] %}
+
+				<article class="brands-cards__item">
+
+					<div class="brands-cards__img">
+
+						<picture>
+
+							<source srcset="/img/brands/RH.webp 1x, /img/brands/RH@2x.webp 2x" type="image/webp">
+							<source srcset="/img/brands/RH.png 1x, /img/brands/RH@2x.png 2x">
+
+							<img src="/img/brands/RH.png" alt="Restoration hardware" loading="lazy">
+
+						</picture>
+
+					</div>
+
+					<h3 class="brands-cards__name">
+						<a href="/" class="brands-cards__link">
+							Restoration hardware
+						</a>
+					</h3>
+
+					<ul class="brands-cards__cat">
+						<li>Кухни</li>
+						<li>Столовые группы</li>
+						<li>Интерьер</li>
+						<li>Мойки</li>
+						<li>Бытовая техника</li>
+						<li>Аксессуары</li>
+					</ul>
+
+					<p class="brands-cards__made">
+						США
+					</p>
+
+					<div class="brands-cards__foot">
+
+						<p class="brands-cards__ship">
+							Срок доставки: <b>2-3 мес.</b>
+							<small>(включена в стоимость)</small>
+						</p>
+
+						<span class="btn btn--orange">
+							Смотреть
+						</span>
+
+					</div>
+
+				</article>
+
+{% endfor %}
+
+			</div>
+
+		</div>
+
+	</div>

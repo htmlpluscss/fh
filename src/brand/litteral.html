@@ -1,0 +1,105 @@
+	<div class="brands-litteral">
+
+		<div class="center">
+
+			<div class="brands-litteral__column">
+
+{% set litteral = [
+	{
+		"litter" : "A",
+		"arr" : [
+			"ANDREW MARTIN",
+			"Adriana Hoyos",
+			"American Brass Crystal",
+			"AM Classic"
+		]
+	},
+	{
+		"litter" : "B",
+		"arr" : [
+			"ANDREW MARTIN",
+			"Adriana Hoyos",
+			"American Brass Crystal",
+			"AM Classic"
+		]
+	},
+	{
+		"litter" : "C",
+		"arr" : [
+			"ANDREW MARTIN",
+			"Adriana Hoyos",
+			"American Brass Crystal",
+			"AM Classic"
+		]
+	},
+	{
+		"litter" : "D",
+		"arr" : [
+			"ANDREW MARTIN",
+			"Adriana Hoyos",
+			"American Brass Crystal",
+			"AM Classic"
+		]
+	},
+	{
+		"litter" : "E",
+		"arr" : [
+			"Elements"
+		]
+	},
+	{
+		"litter" : "F",
+		"arr" : [
+			"Fine Art Lamps"
+		]
+	},
+	{
+		"litter" : "G",
+		"arr" : [
+			"Galimberti Nino",
+			"Guadarte"
+		]
+	},
+	{
+		"litter" : "H",
+		"arr" : [
+			"Holly Hunt",
+			"Henredon",
+			"Hickory White"
+		]
+	},
+	{
+		"litter" : "J",
+		"arr" : [
+			"Jonathan Adler",
+			"Jonathan Browning",
+			"Jonathan Charles",
+			"John Richard"
+		]
+	}
+] %}
+
+{% for item in [1,2] %}
+
+{% for item in litteral %}
+
+				<ul class="brands-litteral__block" data-litter="{{ item.litter }}">
+
+{% for link in item.arr %}
+
+					<li class="brands-litteral__item">
+						<a href="/">{{ link }}</a>
+					</li>
+
+{% endfor %}
+
+				</ul>
+
+{% endfor %}
+
+{% endfor %}
+			</div>
+
+		</div>
+
+	</div>
