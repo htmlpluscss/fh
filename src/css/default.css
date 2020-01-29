@@ -287,6 +287,12 @@ nav {
 
 }
 
+.btn-show-block.is-active {
+
+	opacity: 0;
+	pointer-events: none;
+
+}
 
 /* hidden
 -----------------------------------------------------------------------------*/

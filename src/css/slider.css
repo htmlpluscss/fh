@@ -9,7 +9,7 @@
 		background-image: url(/images/main-slider-patern.png);
 		background-position: right top;
 		background-repeat: no-repeat;
-		padding: 70px 0;
+		padding: 40px 0;
 
 		@media ($mdWidth) {
 
@@ -100,28 +100,38 @@
 
 	}
 
-	.swiper-container {
+	&__title {
 
-		overflow: visible;
+		color: #000;
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		margin: 0 0 40px -48px;
 
-	}
+		@media ($smWidth) {
 
-	.swiper-controls {
+			margin: 0 20px 30px;
 
-		top: -42px;
-		left: 103px;
+		}
 
-		@media ($mdWidth) {
+		&::after {
 
-			top: -42px;
-			left: 20px;
+			position: absolute;
+			width: 36px;
+			height: 4px;
+			top: 100%;
+			left: 2px;
+			margin-top: 9px;
+			content: '';
+			background-color: var(--orange);
 
 		}
 
 	}
 
-	.swiper-button-prev,
-	.swiper-button-next {
+	.swiper-container {
+
+		overflow: visible;
 
 	}
 
