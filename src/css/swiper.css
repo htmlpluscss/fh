@@ -16,8 +16,8 @@
 	.swiper-controls {
 
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 50%;
+		right: 0;
 		z-index: 5;
 		display: flex;
 
@@ -130,8 +130,9 @@
 		position: relative;
 		pointer-events: auto;
 
-		width: 10px;
-		height: 21px;
+		width: 36px;
+		height: 36px;
+		background-color: #fff;
 
 		svg {
 
@@ -170,6 +171,7 @@
 
 	.swiper-button-prev {
 
+		display: none;
 
 	}
 
