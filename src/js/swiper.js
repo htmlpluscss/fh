@@ -69,11 +69,13 @@
 
 				if(!mySwipe) {
 
-					new Swiper(swipe, {
+					mySwipe = new Swiper(swipe, {
 						loop: true,
-						preloadImages: false,
+						updateOnImagesReady: true,
+						preloadImages: true,
 						spaceBetween: 5,
 						slidesPerView: 'auto',
+						loopAdditionalSlides: 1,
 						navigation: {
 							nextEl: swipeNext,
 							prevEl: swipePrev
